@@ -1,0 +1,23 @@
+Package: ipa
+Title: Convert between phonetic alphabets
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alexander",
+           family = "Rossell Hayes",
+           role = c("aut", "cre"),
+           email = "alexander@rossellhayes.com",
+           comment = c(ORCID = "0000-0001-9412-0457"))
+Description: Converts character vectors between IPA and X-SAMPA
+    phonetic representations.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Imports: 
+    stringr,
+    magrittr
+Suggests: 
+    testthat
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
