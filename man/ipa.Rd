@@ -3,32 +3,41 @@
 \name{ipa}
 \alias{ipa}
 \alias{sampa}
-\alias{xsampa}
+\alias{arpa}
 \title{Convert between IPA and X-SAMPA}
 \usage{
-ipa(x, to = c("xsampa", "ipa"))
+ipa(x, to = c("xsampa", "arpabet"))
 
-sampa(x, to = c("ipa", "xsampa"))
+sampa(x, to = c("ipa", "arpabet"))
 
-xsampa(x, to = c("ipa", "xsampa"))
+arpa(x, to = c("ipa", "xsampa"))
 }
 \arguments{
-\item{x}{A phonetic character vector in (X-)SAMPA (for \code{sampa()}) or IPA (for
-\code{ipa()})}
+\item{x}{A phonetic character vector in IPA (for \code{ipa()}),
+X-SAMPA (for \code{sampa()}) or ARPABET (for \code{arpa()}).}
 
 \item{to}{The phonetic alphabet to convert to.
-Defaults to IPA for \code{sampa()} and X-SAMPA for \code{ipa()}.}
+Defaults to \code{"ipa"} for \code{sampa()} and \code{arpa()} and \code{"xsampa"} for \code{ipa()}.}
 }
 \value{
-A character vector the same langth as \code{x}
+A character vector the same length as \code{x}
 }
 \description{
-\code{sampa()} converts (X-)SAMPA to IPA. \code{ipa()} converts IPA to X-SAMPA.
+\itemize{
+\item \code{ipa()} converts from IPA.
+\item \code{sampa()} converts from X-SAMPA.
+\item \code{arpa()} converts from ARPABET (used by the CMU Pronouncing Dictionary).
+}
 }
 \examples{
 sampa("aI pi: \"eI")
-sampa(c("nomb4e", "nO~bR"))
+sampa(c("\"nom.b4e", "nO~bR"))
 
 ipa("aÉª piË ËˆeÉª")
-ipa(c("nombÉ¾e", "nÉ”ÌƒbÊ"))
+ipa(c("Ëˆnom.bÉ¾e", "nÉ”ÌƒbÊ"))
+
+arpa("AA R P AH")
+arpa("AA R P AH", "xsampa")
+sampa("Ar\\\\pV", "arpa")
+ipa("É‘É¹pÊŒ", "arpa")
 }

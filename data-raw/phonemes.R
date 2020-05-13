@@ -1,4 +1,5 @@
 library(dplyr)
+library(readr)
 library(rvest)
 library(tibble)
 
@@ -17,9 +18,19 @@ description <- wiki %>%
   html_text()
 
 phonemes <- tibble(xsampa = xsampa, ipa = ipa) %>%
-  mutate(xsampa = gsub(" \\(or.*", "", xsampa)) %>%
-  filter(xsampa != "", ipa != "", xsampa != "~") %>%
-  bind_rows(tibble(xsampa = "~", ipa = "\u0303")) %>%
-  arrange(desc(nchar(xsampa)))
+  mutate(
+    xsampa = gsub(" \\(or.*", "", xsampa),
+    ipa    = stringi::stri_escape_unicode(ipa) %>%
+      stringr::str_replace_all(c("\\\\u00a0" = "", " " = ""))
+  )
+
+write_csv(phonemes, "data-raw/wiki_phonemes.csv")
+
+phonemes <- read_csv("data-raw/phonemes.csv") %>%
+  mutate(
+    ipa     = stringi::stri_unescape_unicode(ipa),
+    arpabet = if_else(is.na(arpabet), NA_character_, paste0(arpabet, " "))
+  ) %>%
+  mutate_all(~ gsub("([.|()\\^{}+$*?]|\\[|\\])", "\\\\\\1", .))
 
 usethis::use_data(phonemes, internal = TRUE, overwrite = TRUE)

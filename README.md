@@ -15,10 +15,12 @@ status](https://github.com/rossellhayes/ipa/workflows/R-CMD-check/badge.svg)](ht
 coverage](https://codecov.io/gh/rossellhayes/ipa/branch/master/graph/badge.svg)](https://codecov.io/gh/rossellhayes/ipa?branch=master)
 <!-- badges: end -->
 
-Convert character vectors between
-[IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) and
-[X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA) phonetic
-representations.
+Convert character vectors between phonetic representations. Supports
+[IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet),
+[X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA) and
+[ARPABET](https://en.wikipedia.org/wiki/ARPABET) (used by the [CMU
+Pronouncing
+Dictionary](https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary)).
 
 ## Installation
 
@@ -55,6 +57,18 @@ ipa(c("/ˈnom.bɾe/", "/nɔ̃bʁ/"))
 `/nom.b4e/`, `/nO~bR/`
 
 <!-- `ipa()` does not work in Rmarkdown, but does work in the console -->
+
+ARPABET support allows **ipa** to automatically convert results from the
+[**phon**](https://github.com/coolbutuseless/phon) package.
+
+``` r
+remotes::install_github("coolbutuseless/phon")
+library(phon)
+
+arpa(phon::phonemes("pronounce"))
+```
+
+pɹʌnaʊns
 
 -----
 
