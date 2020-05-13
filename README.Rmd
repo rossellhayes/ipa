@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 library(ipa)
 ```
 
-# ipa
+# ipa <img src="man/figures/logo.png?raw=TRUE" align="right" height="138" />
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
