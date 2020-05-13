@@ -35,8 +35,6 @@ install_github("rossellhayes/ipa")
 
 ## Usage
 
-`r sampa("aI pi: \"eI")`
-
 ```{r eval = FALSE}
 sampa("/aI pi: \"eI/")
 ```

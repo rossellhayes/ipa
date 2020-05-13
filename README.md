@@ -26,8 +26,6 @@ install_github("rossellhayes/ipa")
 
 ## Usage
 
-aɪ piː ˈeɪ
-
 ``` r
 sampa("/aI pi: \"eI/")
 ```
