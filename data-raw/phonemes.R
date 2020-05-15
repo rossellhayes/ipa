@@ -32,7 +32,6 @@ phonemes <- read_csv("data-raw/phonemes.csv") %>%
     arpabet = if_else(is.na(arpabet), NA_character_, paste0(arpabet, " "))
   ) %>%
   mutate_all(~ gsub("([.|()\\^{}+$*?]|\\[|\\])", "\\\\\\1", .)) %>%
-  mutate(arpabet = if_else(ipa == "'", "", arpabet)) %>%
-  bind_rows(tibble(arpabet = "\\d", ipa = " ", xsampa = " "))
+  mutate(arpabet = if_else(xsampa %in% c('"', '%'), '', arpabet))
 
 usethis::use_data(phonemes, internal = TRUE, overwrite = TRUE)

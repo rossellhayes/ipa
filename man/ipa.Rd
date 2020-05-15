@@ -3,21 +3,32 @@
 \name{ipa}
 \alias{ipa}
 \alias{sampa}
+\alias{xsampa}
 \alias{arpa}
-\title{Convert between IPA and X-SAMPA}
+\alias{arpabet}
+\alias{cmu}
+\title{Convert between IPA, X-SAMPA and ARPABET (CMU)}
 \usage{
 ipa(x, to = c("xsampa", "arpabet"))
 
 sampa(x, to = c("ipa", "arpabet"))
 
+xsampa(x, to = c("ipa", "arpabet"))
+
 arpa(x, to = c("ipa", "xsampa"))
+
+arpabet(x, to = c("ipa", "xsampa"))
+
+cmu(x, to = c("ipa", "xsampa"))
 }
 \arguments{
 \item{x}{A phonetic character vector in IPA (for \code{ipa()}),
 X-SAMPA (for \code{sampa()}) or ARPABET (for \code{arpa()}).}
 
 \item{to}{The phonetic alphabet to convert to.
-Defaults to \code{"ipa"} for \code{sampa()} and \code{arpa()} and \code{"xsampa"} for \code{ipa()}.}
+Defaults to \code{"ipa"} for \code{sampa()} and \code{arpa()} and \code{"xsampa"} for \code{ipa()}.
+\code{"sampa"} is an accepted alias for \code{"xsampa"}.
+\code{"arpa"} and \code{"cmu"} are accepted aliases for \code{"arpabet"}.}
 }
 \value{
 A character vector the same length as \code{x}
@@ -25,8 +36,9 @@ A character vector the same length as \code{x}
 \description{
 \itemize{
 \item \code{ipa()} converts from IPA.
-\item \code{sampa()} converts from X-SAMPA.
-\item \code{arpa()} converts from ARPABET (used by the CMU Pronouncing Dictionary).
+\item \code{sampa()} and \code{xsampa()} convert from X-SAMPA.
+\item \code{arpa()}, \code{arpabet()} and \code{cmu()} convert from ARPABET (used by the CMU
+Pronouncing Dictionary).
 }
 }
 \examples{
