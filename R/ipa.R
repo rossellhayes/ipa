@@ -72,22 +72,31 @@ arpa <- function(x, to = c("ipa", "xsampa")) {
   ]
   phonemes <- phonemes[
     order(
+      phonemes[[match.arg(to)]] == " ",
       nchar(phonemes[[match.arg(to)]]),
       nchar(phonemes$arpabet),
       decreasing = TRUE
     ),
   ]
   phonemes$arpabet          <- paste0(phonemes$arpabet, "(?![^\\(]*[\\)])")
-  phonemes[[match.arg(to)]] <- paste0("(", phonemes[[match.arg(to)]], ")")
+  phonemes[[match.arg(to)]] <- ifelse(
+    phonemes[[match.arg(to)]] != " ",
+    paste0("(", phonemes[[match.arg(to)]], ")"),
+    " "
+  )
 
   x <- paste0(" ", x, " ")
+
+  if (any(grepl("\\d", x))) {
+    warning("Stress is not supported in `arpa()`, so stresses were removed.")
+  }
 
   trimws(
     gsub(
       "\\(|\\)",
       "",
       stringr::str_replace_all(
-        x, `names<-`(phonemes[[match.arg(to)]], phonemes$arpabet)
+        x, c(`names<-`(phonemes[[match.arg(to)]], phonemes$arpabet))
       )
     )
   )
