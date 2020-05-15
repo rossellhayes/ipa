@@ -29,7 +29,7 @@ ipa <- function(x, to = c("xsampa", "arpabet")) {
   ]
 
   if (to == "arpabet") {
-    if (any(grepl("ˈ|\u02cc", x))) {
+    if (any(grepl("\u02c8|\u02cc", x))) {
       warning("Stress is not supported for ARPABET, so stresses were removed.")
     }
   }
