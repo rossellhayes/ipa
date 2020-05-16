@@ -15,6 +15,8 @@
 #' @return A character vector the same length as `x`
 #' @export
 #'
+#' @encoding UTF-8
+#'
 #' @example examples/ipa.R
 
 ipa <- function(x, to = c("xsampa", "arpabet")) {
