@@ -7,13 +7,14 @@ Authors@R:
            role = c("aut", "cre"),
            email = "alexander@rossellhayes.com",
            comment = c(ORCID = "0000-0001-9412-0457"))
-Description: Converts character vectors between IPA and X-SAMPA
-    phonetic representations.
+Description: Converts character vectors between phonetic representations.
+    Supports the International Phonetic Alphabet (IPA), X-SAMPA, and ARPABET
+    (used by the CMU Pronouncing Dictionary).
 License: MIT + file LICENSE
 Depends: 
     R (>= 2.10)
-Imports: 
-    stringr
+Imports:
+    stringi
 Suggests: 
     testthat,
     covr

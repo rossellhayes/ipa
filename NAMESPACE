@@ -3,6 +3,7 @@
 export(arpa)
 export(arpabet)
 export(cmu)
+export(convert_phonetics)
 export(ipa)
 export(sampa)
 export(xsampa)
