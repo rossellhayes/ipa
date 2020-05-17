@@ -1,0 +1,16 @@
+citHeader("To cite ipa in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "ipa: convert between phonetic alphabets",
+  author   = "Rossell Hayes, Alexander",
+  year     = 2020,
+  note     = "R package version 0.1.0",
+  url      = "https://github.com/rossellhayes/ipa",
+  textVersion = paste(
+    "Alexander Rossell Hayes (2020).",
+    "ipa: convert between phonetic alphabets.",
+    "R package version 0.1.0.",
+    "https://github.com/rossellhayes/ipa"
+  )
+)
