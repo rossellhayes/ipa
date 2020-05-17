@@ -1,5 +1,5 @@
 Package: ipa
-Title: Convert between phonetic alphabets
+Title: Convert Between Phonetic Alphabets
 Version: 0.1.0
 Authors@R: 
     person(given = "Alexander",
