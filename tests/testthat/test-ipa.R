@@ -2,6 +2,7 @@ test_that("single SAMPA to IPA", {
   expect_equal(sampa("\"nom.b4e"), "ˈnom.bɾe")
   expect_equal(sampa("nO~bR"), "nɔ̃bʁ")
   expect_equal(sampa('%hE"loU'), "ˌhɛˈloʊ")
+  expect_equal(sampa("/%foU.naI\"if/"), "/ˌfoʊ.naɪˈif/")
 })
 
 test_that("multiple SAMPA to IPA", {
@@ -13,6 +14,7 @@ test_that("single IPA to SAMPA", {
   expect_equal(ipa("ˈnom.bɾe"), "\"nom.b4e")
   expect_equal(ipa("nɔ̃bʁ"), "nO~bR")
   expect_equal(ipa("ˌhɛˈloʊ"), '%hE"loU')
+  expect_equal(ipa("/ˌfoʊ.naɪˈif/"), "/%foU.naI\"if/")
 })
 
 test_that("multiple IPA to SAMPA", {
