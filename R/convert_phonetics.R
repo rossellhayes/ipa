@@ -23,6 +23,9 @@
 convert_phonetics <- function(
   x, from = c("ipa", "xsampa", "arpabet"), to = c("ipa", "xsampa", "arpabet")
 ) {
+  op <- options(stringsAsFactors = FALSE)
+  on.exit(options(op), add = TRUE)
+
   from <- alias_encoding(from)
   from <- match.arg(from)
   to   <- alias_encoding(to)
