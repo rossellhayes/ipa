@@ -16,7 +16,7 @@ cmu(x, to = c("ipa", "xsampa"))
 \item{x}{A phonetic character vector in ARPABET}
 
 \item{to}{The phonetic alphabet to convert to.
-Defaults \code{"ipa"}.
+Defaults to \code{"ipa"}.
 \code{"sampa"} is an accepted alias for \code{"xsampa"}.}
 }
 \value{

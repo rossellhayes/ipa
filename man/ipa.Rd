@@ -10,7 +10,7 @@ ipa(x, to = c("xsampa", "arpabet"))
 \item{x}{A phonetic character vector in IPA}
 
 \item{to}{The phonetic alphabet to convert to.
-Defaults \code{"xsampa"}.
+Defaults to \code{"xsampa"}.
 \code{"sampa"} is an accepted alias for \code{"xsampa"}.
 \code{"arpa"} and \code{"cmu"} are accepted aliases for \code{"arpabet"}.}
 }

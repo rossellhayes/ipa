@@ -13,7 +13,7 @@ xsampa(x, to = c("ipa", "arpabet"))
 \item{x}{A phonetic character vector in X-SAMPA}
 
 \item{to}{The phonetic alphabet to convert to.
-Defaults \code{"ipa"}.
+Defaults to \code{"ipa"}.
 \code{"arpa"} and \code{"cmu"} are accepted aliases for \code{"arpabet"}.}
 }
 \value{

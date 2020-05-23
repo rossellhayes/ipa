@@ -4,7 +4,7 @@
 #'
 #' @param x A phonetic character vector in X-SAMPA
 #' @param to The phonetic alphabet to convert to.
-#'     Defaults `"ipa"`.
+#'     Defaults to `"ipa"`.
 #'     `"arpa"` and `"cmu"` are accepted aliases for `"arpabet"`.
 #'
 #' @return A character vector the same length as `x`

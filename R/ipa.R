@@ -4,7 +4,7 @@
 #'
 #' @param x A phonetic character vector in IPA
 #' @param to The phonetic alphabet to convert to.
-#'     Defaults `"xsampa"`.
+#'     Defaults to `"xsampa"`.
 #'     `"sampa"` is an accepted alias for `"xsampa"`.
 #'     `"arpa"` and `"cmu"` are accepted aliases for `"arpabet"`.
 #'

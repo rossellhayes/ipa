@@ -4,7 +4,7 @@
 #'
 #' @param x A phonetic character vector in ARPABET
 #' @param to The phonetic alphabet to convert to.
-#'     Defaults `"ipa"`.
+#'     Defaults to `"ipa"`.
 #'     `"sampa"` is an accepted alias for `"xsampa"`.
 #'
 #' @return A character vector the same length as `x`
