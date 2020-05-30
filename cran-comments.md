@@ -1,3 +1,10 @@
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Removed single quotes around acronyms in DESCRIPTION.
+* Added an explanation for all acronyms in DESCRIPTION.
+* Identified myself as copyright holder in DESCRIPTION.
+
 ## Test environments
 * Local R installation, Windows 10, R 4.0.0
 * GitHub Action

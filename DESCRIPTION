@@ -4,13 +4,13 @@ Version: 0.1.0
 Authors@R: 
     person(given = "Alexander",
            family = "Rossell Hayes",
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            email = "alexander@rossellhayes.com",
            comment = c(ORCID = "0000-0001-9412-0457"))
 Description: Converts character vectors between phonetic
-    representations.  Supports the International Phonetic Alphabet
-    ('IPA'), 'X-SAMPA', and 'ARPABET' (used by the 'CMU' Pronouncing
-    Dictionary).
+    representations.  Supports IPA (International Phonetic Alphabet),
+    X-SAMPA (Extended Speech Assessment Methods Phonetic Alphabet), and
+    ARPABET (used by the CMU Pronouncing Dictionary).
 License: MIT + file LICENSE
 URL: https://github.com/rossellhayes/ipa
 BugReports: https://github.com/rossellhayes/ipa/issues
