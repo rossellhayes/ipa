@@ -32,17 +32,23 @@ install_github("rossellhayes/ipa")
 
 ## Usage
 
+My main use case for **ipa** is including phonetic representations in R
+markdown files. You can enter phonetic information as plain-text X-SAMPA
+and have it rendered as IPA.
+
 ``` r
-sampa("/aI pi: \"eI/")
+`r sampa('/aI pi: "eI/')`
 ```
 
 /aɪ piː ˈeɪ/
 
 ``` r
-sampa(c("/\"nom.b4e/", "/nO~bR/"))
+`r sampa(c('/"nom.b4e/', '/nO~bR/'))`
 ```
 
 /ˈnom.bɾe/, /nɔ̃bʁ/
+
+You can also get the X-SAMPA representation of IPA strings.
 
 ``` r
 ipa("/aɪ piː ˈeɪ/")
@@ -62,9 +68,7 @@ ARPABET support allows **ipa** to automatically convert results from the
 [**phon**](https://github.com/coolbutuseless/phon) package.
 
 ``` r
-remotes::install_github("coolbutuseless/phon")
-library(phon)
-
+# remotes::install_github("coolbutuseless/phon")
 arpa(phon::phonemes("pronounce"))
 ```
 
