@@ -74,6 +74,13 @@ arpa(phon::phonemes("pronounce"))
 
 pɹʌnaʊns
 
+## Credits
+
+Hex sticker fonts are [Source Code
+Pro](https://github.com/adobe-fonts/source-code-pro) and [Source Serif
+Pro](https://github.com/adobe-fonts/source-serif-pro) by
+[Adobe](https://adobe.com).
+
 -----
 
 Please note that **ipa** is released with a [Contributor Code of
