@@ -5,8 +5,10 @@
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/ipa)](https://CRAN.R-project.org/package=ipa)
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 [![R build
@@ -24,7 +26,14 @@ Dictionary](https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary)).
 
 ## Installation
 
-You can install the development version of **ipa** from GitHub with:
+You can install the released version of **ipa** from
+[CRAN](https://cran.r-project.org/) with:
+
+``` r
+install.packages("ipa")
+```
+
+Or the development version from GitHub with:
 
 ``` r
 install_github("rossellhayes/ipa")

@@ -20,7 +20,8 @@ library(phon)
 # ipa <img src="man/figures/logo.png?raw=TRUE" align="right" height="138" />
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/ipa)](https://CRAN.R-project.org/package=ipa)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 [![R build status](https://github.com/rossellhayes/ipa/workflows/R-CMD-check/badge.svg)](https://github.com/rossellhayes/ipa/actions)
 [![Codecov test coverage](https://codecov.io/gh/rossellhayes/ipa/branch/master/graph/badge.svg)](https://codecov.io/gh/rossellhayes/ipa?branch=master)
@@ -33,9 +34,15 @@ Dictionary](https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary)).
 
 ## Installation
 
-You can install the development version of **ipa** from GitHub with:
+You can install the released version of **ipa** from [CRAN](https://cran.r-project.org/) with:
 
-``` r
+```{r eval = FALSE}
+install.packages("ipa")
+```
+
+Or the development version from GitHub with:
+
+``` {r eval = FALSE}
 install_github("rossellhayes/ipa")
 ```
 
