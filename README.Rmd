@@ -14,17 +14,21 @@ knitr::opts_chunk$set(
 )
 
 library(ipa)
+# remotes::install_github("GuangchuangYu/badger")
+library(badger)
+# remotes::install_github("coolbutuseless/phon")
 library(phon)
 ```
 
 # ipa <img src="man/figures/logo.png?raw=TRUE" align="right" height="138" />
 
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/ipa)](https://CRAN.R-project.org/package=ipa)
-[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
-[![R build status](https://github.com/rossellhayes/ipa/workflows/R-CMD-check/badge.svg)](https://github.com/rossellhayes/ipa/actions)
-[![Codecov test coverage](https://codecov.io/gh/rossellhayes/ipa/branch/master/graph/badge.svg)](https://codecov.io/gh/rossellhayes/ipa?branch=master)
+`r badge_cran_release(color = "brightgreen")`
+`r badge_lifecycle("maturing")`
+`r badge_license(color = "blueviolet")`
+`r badge_github_actions(action = "R-CMD-check")`
+`r badge_codecov()`
+`r badge_dependencies()`
 <!-- badges: end -->
 
 Convert character vectors between phonetic representations.

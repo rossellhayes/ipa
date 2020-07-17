@@ -5,16 +5,14 @@
 
 <!-- badges: start -->
 
-[![CRAN
-status](https://www.r-pkg.org/badges/version/ipa)](https://CRAN.R-project.org/package=ipa)
-[![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![](https://www.r-pkg.org/badges/version/ipa?color=brightgreen)](https://cran.r-project.org/package=ipa)
+[![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![License:
-MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
+MIT](https://img.shields.io/badge/license-MIT-blueviolet.svg)](https://cran.r-project.org/web/licenses/MIT)
 [![R build
 status](https://github.com/rossellhayes/ipa/workflows/R-CMD-check/badge.svg)](https://github.com/rossellhayes/ipa/actions)
-[![Codecov test
-coverage](https://codecov.io/gh/rossellhayes/ipa/branch/master/graph/badge.svg)](https://codecov.io/gh/rossellhayes/ipa?branch=master)
+[![](https://codecov.io/gh/rossellhayes/ipa/branch/master/graph/badge.svg)](https://codecov.io/gh/rossellhayes/ipa)
+[![Dependencies](https://tinyverse.netlify.com/badge/ipa)](https://cran.r-project.org/package=ipa)
 <!-- badges: end -->
 
 Convert character vectors between phonetic representations. Supports
